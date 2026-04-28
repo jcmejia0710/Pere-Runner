@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pere Runner</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="game-container">
+    <h1>Pere Runner</h1>
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+    <div class="controls">
+      <img id="play-btn" src="assets/ui/play.png" alt="Jugar" class="ui-btn">
+      <img id="pause-btn" src="assets/ui/pause.png" alt="Pausa" class="ui-btn">
+      <img id="sound-btn" src="assets/ui/sound_on.png" alt="Sonido ON" class="ui-btn">
+      <img id="restart-btn" src="assets/ui/restart.png" alt="Reiniciar" class="ui-btn">
+      <button id="tutorial-btn">Cómo jugar</button>
+    </div>
+
+    <div id="stats-panel">
+      <p id="score">Puntaje: 0</p>
+      <p id="level">Nivel: 1</p>
+      <p id="record">Récord: 0</p>
+      <p id="partidas">Partidas Jugadas: 0</p>
+      <p id="choques">Choques Totales: 0</p>
+      <p id="tiempo">Tiempo Total Jugado: 0.0s</p>
+      <p id="p10">P10: 0%</p>
+    </div>
+  </div>
+
+  <!-- Modal Tutorial -->
+  <div id="tutorial-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <p>¡Usa el ESPACIO para saltar y esquivar los obstáculos! ¡Llega al nivel 10 para ganar!</p>
+      <button id="close-tutorial">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
